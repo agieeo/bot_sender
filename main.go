@@ -21,10 +21,10 @@ var imageMessage string
   
 func main() {  
    router := gin.Default()  
-   msg.GroupId = 319021060  
+   msg.GroupId = 3xxxxxx //群号 
+       
    router.POST("/", func(c *gin.Context) {  
   
-      //群号  
   
       //将json格式的context转化成go结构体  
       if err := c.ShouldBindJSON(&msg); err != nil {  
